@@ -1,0 +1,146 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.footer {
+    background-color: $color-blue-first;
+    padding: 90px 0;
+
+  &-container {
+    position: relative;
+    max-width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond(laptop) {
+      margin: 0 40px;
+    }
+
+    @include respond(big-tablet) {
+      flex-direction: column;
+    }
+
+    &__address {
+      color: $color-white;
+      font-style: normal;
+      font-size: 15px;
+
+      @include respond(big-tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      & p {
+        margin: 0;
+      }
+
+      & p:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      & .map {
+        height: 200px;
+        width: 200px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        border: 1px solid $color-blue-first;
+        transform: translateZ(0);
+        margin-top: 50px;
+
+        & .leaflet-control-attribution.leaflet-control {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex-grow: 2;
+      margin-left: 80px;
+
+      @include respond(laptop) {
+        margin-left: 50px;
+      }
+
+      @include respond(small-laptop) {
+        justify-content: space-around;
+      }
+
+      @include respond(big-tablet) {
+        display: grid;
+        flex-grow: 0;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        margin: 50px auto 0 auto;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+
+        @include respond(laptop) {
+          justify-self: start;
+        }
+
+        @include respond(big-tablet) {
+          margin-top: 30px;
+        }
+
+        & a {
+          color: $color-white;
+          font-size: 15px;
+          margin: 0;
+          text-decoration: none;
+
+          &:first-child {
+            cursor: default;
+          }
+
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+
+          &:nth-child(2) {
+            margin-top: 30px;
+          }
+
+          &:not(:first-child):hover {
+            cursor: pointer;
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+
+    &__realization {
+      position: absolute;
+      top: 85%;
+      right: 2%;
+      color: $color-white;
+      font-size: 15px;
+
+      @include respond(small-laptop) {
+        top: 105%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+
+      @include respond(big-tablet) {
+        top: 101%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+  }
+}

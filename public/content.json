@@ -1,0 +1,268 @@
+{
+  "data": [
+    {
+      "component": "header",
+      "content": {
+        "images": [
+          {
+            "url": "https://www.universitasvarsoviensis.pl/images/main-image.png",
+            "alt": "Główne zdjęcie",
+            "title": "Będziesz się uczyć ciekawością.",
+            "subtitle": "Obiecujemy."
+          },
+          {
+            "url": "https://www.universitasvarsoviensis.pl/images/main-image.png",
+            "alt": "Główne zdjęcie",
+            "title": "Będziesz się uczyć inspiracjami.",
+            "subtitle": "Zaufaj nam."
+          },
+          {
+            "url": "https://www.universitasvarsoviensis.pl/images/main-image.png",
+            "alt": "Główne zdjęcie",
+            "title": "Będziesz się uczyć ze znajomymi.",
+            "subtitle": "Obiecujemy."
+          },
+          {
+            "url": "https://www.universitasvarsoviensis.pl/images/main-image.png",
+            "alt": "Główne zdjęcie",
+            "title": "Będziesz się uczyć z najlepszymi.",
+            "subtitle": "Zaufaj nam."
+          }
+        ],
+        "logo": "https://www.universitasvarsoviensis.pl/images/logo.png",
+        "logoDark": "https://www.universitasvarsoviensis.pl/images/logo-dark.png",
+        "buttonSeeMore": "Zobacz więcej",
+        "buttonAction": "Umów się z aniołem",
+        "menu": [
+          {
+            "name": "I stopnia",
+            "link": "Istopnia"
+          },
+          {
+            "name": "II stopnia",
+            "link": "IIstopnia"
+          },
+          {
+            "name": "Podyplomowe",
+            "link": "podyplomowe"
+          },
+          {
+            "name": "Szkolenia",
+            "link": "szkolenia"
+          },
+          {
+            "name": "Usługi",
+            "link": "uslugi"
+          }
+        ]
+      }
+    },
+    {
+      "component": "text_with_image",
+      "content": {
+        "images": {
+            "url": "https://www.universitasvarsoviensis.pl/images/for-who.png",
+            "alt": "Dla kogo uniwersytet?"
+        },
+        "title": "Dla kogo?",
+        "mainText": "Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania kolejnego przedmiotu - Geografii.",
+        "secondText": "Studia adresowane są do osób legitymujących się wyższym wykształceniem na poziomie studiów licencjackim o specjalnościach nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub słuchaczy legitymujących się wyższym wykształceniem na poziomie studiów magisterskich nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z Rzoporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych od nauczycieli",
+        "link": "https://www.universitasvarsoviensis.pl",
+        "linkVideo": "",
+        "subscribeLink": " (Dz.U. 2017 poz. 1575)",
+        "requirementsTitle": "Wymagane od kandydata:",
+        "imageLeft": false,
+        "requirements": [
+          {
+            "subscribe": "Ukończone studia wyższe"
+          },
+          {
+            "subscribe": "Przygotowanie pedagogiczne"
+          }
+        ],
+        "background": false
+      }
+    },
+    {
+      "component": "text_with_image",
+      "content": {
+        "images": {
+          "url": "https://www.universitasvarsoviensis.pl/images/for-what.png",
+          "alt": "Po co studia?"
+        },
+        "title": "Po co?",
+        "mainText": "UW wie co robić, by programy proponowanych kierunków studiów były jak najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy zapraszamy przedsiębiorców, trenerów, doświadczonych, praktyków. Dbamy o to, żeby nasi studenci korzystali z doświadczenia i wiedzy osób, które odniosły w życiu zawodowy sukces. Dążymy do tego, by wybierający naszą uczelnię już w trakcie studiów mmieli kontakt z jak największą liczbą pracodawców i praktyków biznesu ponieważ wiemy, że pomoże to im w zdobyciu wielu potrzebnych kwalifikacji oraz umiejętności, które zaprocentują w każdym miejscu pracy a także zainspiruje do poszerzania swoich kompetnecji.",
+        "secondText": "",
+        "link": "",
+        "linkVideo": "",
+        "subscribeLink": "",
+        "requirementsTitle": "",
+        "imageLeft": true,
+        "requirements": [],
+        "background": true
+      }
+    },
+    {
+      "component": "text_with_image",
+      "content": {
+        "images": {
+          "url": "https://www.universitasvarsoviensis.pl/images/with-who.png",
+          "alt": "Z kim uniwersytet?"
+        },
+        "title": "Z kim?",
+        "mainText": "Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i pracownicy to osoby nie tylko ciekawe świata, ale także pełne pasji w odkrywaniu nowych rzeczy i w pozytywny sposób wpływające na swoje otocznie.",
+        "secondText": "Nasze kierunki studiów są interesujące i innowacyjne, tworzone we współpracy z pracodawcami oraz na podstawie trendów w światowej gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi absolwenci znjadują spracę zgodną ze swoimi zainteresowaniami i wykształceniem",
+        "link": "",
+        "linkVideo": "https://www.youtube.com/embed/54wZjgTBfP4",
+        "titleOfVideo": "Uniwersytet Warszawski",
+        "subscribeLink": "",
+        "requirementsTitle": "",
+        "imageLeft": false,
+        "requirements": [],
+        "background": false
+      }
+    },
+    {
+      "component": "form",
+      "content": {
+        "title": "Nie znalazłeś odpowiedniego kontaktu?",
+        "describtion": "Skorzystaj z formularza.",
+        "placeholderName": "Imię",
+        "placeholderLastname": "Nazwisko",
+        "placeholderMail": "Adres e-mail",
+        "placeholderMessage": "Treść wiadomości",
+        "placeholderCheckbox": "Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.",
+        "button": "Wyślij"
+      }
+    },
+    {
+      "component": "footer",
+      "content": {
+        "cords": [
+          52.416840,
+          16.932596
+        ],
+        "address": {
+          "street": "ul. Głogowska 10",
+          "zipCode": "61-719 Poznań",
+          "phone": "tel. 61 27 11 000"
+        },
+        "menu": {
+          "about": [
+            {
+              "name": "O nas",
+              "link": ""
+            },
+            {
+              "name": "Dlaczego CDV",
+              "link": "/"
+            },
+            {
+              "name": "Kadra naukowa",
+              "link": "/"
+            },
+            {
+              "name": "Dla mediów",
+              "link": "/"
+            },
+            {
+              "name": "Kontakt",
+              "link": "/"
+            }
+          ],
+          "candidates": [
+            {
+              "name": "Dla kandydata",
+              "link": ""
+            },
+            {
+              "name": "Poradnik maturzysty",
+              "link": "/"
+            },
+            {
+              "name": "Rekrutacja",
+              "link": "/"
+            },
+            {
+              "name": "Kredyt studencki",
+              "link": "/"
+            },
+            {
+              "name": "Studia dla cudzoziemców",
+              "link": "/"
+            }
+          ],
+          "students": [
+            {
+              "name": "Dla studenta",
+              "link": ""
+            },
+            {
+              "name": "Wirtualna Uczelnia",
+              "link": "/"
+            },
+            {
+              "name": "Stypendia",
+              "link": "/"
+            },
+            {
+              "name": "Biuro Karier",
+              "link": "/"
+            },
+            {
+              "name": "Studiuj dalej",
+              "link": "/"
+            }
+          ],
+          "business": [
+            {
+              "name": "Dla biznesu",
+              "link": ""
+            },
+            {
+              "name": "Współpraca z biznesem",
+              "link": "/"
+            },
+            {
+              "name": "EmotionsLAB",
+              "link": "/"
+            },
+            {
+              "name": "Wynajem sal",
+              "link": "/"
+            },
+            {
+              "name": "Znajdź pracownika",
+              "link": "/"
+            }
+          ],
+          "shortcuts": [
+            {
+              "name": "Na skróty",
+              "link": ""
+            },
+            {
+              "name": "Aktualności",
+              "link": "/"
+            },
+            {
+              "name": "Wydarzenia",
+              "link": "/"
+            },
+            {
+              "name": "Konferencje",
+              "link": "/"
+            },
+            {
+              "name": "Blog",
+              "link": "/"
+            }
+          ]
+        },
+        "realization": {
+          "author": "Projekt i realizacja Crafton"
+        }
+      }
+    }
+  ]
+}

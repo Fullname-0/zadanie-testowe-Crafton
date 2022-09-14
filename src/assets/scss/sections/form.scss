@@ -1,0 +1,286 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey-third;
+  margin-top: 88px;
+  padding: 50px 0;
+
+  @include respond(laptop) {
+    margin-top: 0;
+  }
+
+  &__container {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+
+    &__heading {
+      text-align: center;
+      font-weight: 600;
+
+      & h3 {
+        color: $color-black-sec;
+
+        @include respond(big-tablet) {
+          margin: auto $margin-mobile;
+        }
+      }
+
+      & p {
+        color: $color-blue-sec;
+      }
+    }
+
+    &__user-data {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      gap: 34px;
+      margin-top: 30px;
+
+      @include respond(tablet) {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      & input:focus::placeholder, & textarea:focus::placeholder {
+        visibility: hidden;
+      }
+
+      & input:focus + label, & input:not(:placeholder-shown) + label {
+        top: 30%;
+        left: 3%;
+        visibility: visible;
+        transition: all .3s;
+      }
+    }
+
+    & .input-box {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto 0 auto;
+      width: 100%;
+
+      @include respond(tablet) {
+        width: 90%;
+      }
+
+      &--error input, &--error textarea, &--error input:focus-visible, &--error textarea:focus-visible {
+        color: $color-red;
+        outline: 1px solid $color-red;
+      }
+
+      & .input-box__lastname + label, & .input-box__name + label {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        font-size: 11px;
+        transform: translateY(-50%);
+        visibility: hidden;
+      }
+
+      & .input-box__email::placeholder, & textarea::placeholder, & .input-box__lastname::placeholder, & .input-box__name::placeholder {
+        font-family: Muli;
+        font-size: 15px;
+      }
+
+      & .input-box__email:focus-visible, & textarea:focus-visible, & .input-box__lastname:focus-visible, & .input-box__name:focus-visible {
+        outline: none;
+      }
+
+      & .input-box__email, & textarea, & .input-box__lastname, & .input-box__name, & .input-box__email:hover, & textarea:hover, & .input-box__lastname:hover, & .input-box__name:hover {
+        width: 100%;
+        padding: 20px 0 8px 15px;
+        border: none;
+        font-weight: 500;
+        font-size: 15px;
+        resize: none;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px 2px rgba(243, 243, 243, 1);
+        transition: all .3s;
+
+        &:focus-visible {
+          box-shadow: 0px 10px 10px 2px rgba(231, 231, 231, 1);
+        }
+
+        @include respond(tablet) {
+          width: 90%;
+        }
+      }
+
+      & .input-box__email:focus::placeholder, & textarea:focus::placeholder, & .input-box__lastname:focus::placeholder, & .input-box__name:focus::placeholder {
+        visibility: hidden;
+      }
+
+      & .input-box__email:focus + label, & .input-box__email:not(:placeholder-shown) + label {
+        top: 22%;
+        left: 1%;
+        visibility: visible;
+        font-size: 11px;
+        transition: all .3s;
+      }
+
+      & .input-box__lastname:focus + label, & .input-box__lastname:not(:placeholder-shown) + label, .input-box__name:focus + label, & .input-box__name:not(:placeholder-shown) + label {
+        top: 22%;
+        left: 2%;
+        visibility: visible;
+        font-size: 11px;
+        transition: all .3s;
+      }
+
+      & textarea:focus + label, & textarea:not(:placeholder-shown) + label {
+        top: 8%;
+        left: 1%;
+        visibility: visible;
+        font-size: 11px;
+        transition: all .4s;
+      }
+
+      & .input-box__email + label {
+        position: absolute;
+        top: 50%;
+        left: 1.5%;
+        transform: translateY(-50%);
+        visibility: hidden;
+      }
+
+      & textarea + label {
+        position: absolute;
+        top: 25%;
+        left: 1.5%;
+        transform: translateY(-50%);
+        visibility: hidden;
+      }
+    }
+
+      & .input__checkbox-box {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin: 20px auto 0 auto;
+
+        @include respond(tablet) {
+          width: 80%;
+        }
+
+        & .input__checkbox-mark {
+          -webkit-appearance: none;
+          appearance: none;
+          background-color: $color-white;
+          box-shadow: inset 1px 1px 1px 1px rgba(224, 224, 224, 1);
+          margin: 0;
+          font: inherit;
+          color: $color-black;
+          width: 18px;
+          height: 18px;
+          border: none;
+          display: grid;
+          place-content: center;
+
+          &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            padding: 5px;
+          }
+
+          &:checked::before {
+            margin-top: 2px;
+            margin-left: 1px;
+            background: no-repeat center url("../../images/mark.png");
+          }
+        }
+
+        & .input__checkbox-label {
+          margin-left: 12px;
+          line-height: 18px;
+          font-size: 10px;
+          font-weight: 600;
+          color: $color-grey;
+        }
+      }
+
+    & .button-box {
+      width: 100%;
+      text-align: center;
+
+      & .form__button {
+        padding: 17px 35px;
+        background-color: $color-primary;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: Muli, serif;
+        color: $color-white;
+        border: none;
+        margin: 26px auto;
+        border-radius: 100px;
+        text-transform: uppercase;
+        transition: all .4s ease;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $color-yellow;
+          color: $color-black
+        }
+      }
+    }
+  }
+
+  & .alert {
+    width: 330px;
+    height: 200px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+    color: $color-white;
+    z-index: 1001;
+
+    &--success {
+      background-color: $color-green;
+    }
+
+    &--info {
+      background-color: $color-primary;
+    }
+
+    &--error {
+      background-color: $color-red;
+    }
+
+    & p {
+      color: $color-white;
+    }
+
+    & button {
+      padding: 10px 25px;
+      border-radius: 10px;
+      margin: 20px auto;
+      background-color: $color-white;
+      align-self: flex-end;
+      font-family: Muli, serif;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-grey-third;
+      }
+    }
+  }
+}

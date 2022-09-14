@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {useContext, useEffect} from "react";
+import ContentContext from './store/content-context';
+import {getAllComponents} from "./api";
+import './assets/scss/sections/main.scss';
+import MainLayout from "./layout/MainLayout";
 
 function App() {
+    const {components, setComponents} = useContext(ContentContext);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const components = await getAllComponents();
+            setComponents(components);
+        }
+        fetchData().catch(error => console.error(error))
+    }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+        {components.map((page, index) => page.toComponents(`${page.title}-${index}`))}
+    </MainLayout>
   );
 }
 

@@ -1,0 +1,10 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.main {
+  margin: 88px auto 0 auto;
+
+  @include respond(laptop) {
+    margin: 0 auto
+  }
+}

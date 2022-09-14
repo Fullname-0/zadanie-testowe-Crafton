@@ -1,0 +1,133 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  z-index: 100;
+}
+
+.burger {
+  position: fixed;
+  right: 8%;
+  top: 10%;
+  width: 25px;
+  height: 2px;
+  background-color: $color-white;
+  z-index: 1001;
+
+  &::before {
+    background-color: $color-white;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    transition: all .2s;
+  }
+
+  &:after {
+    background-color: $color-white;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 25px;
+    height: 2px;
+    transition: all .2s;
+  }
+
+  &--color {
+    position: fixed;
+    right: 8%;
+    top: 10%;
+    width: 25px;
+    height: 2px;
+    background-color: $color-black;
+    z-index: 1001;
+
+    &.open {
+      background-color: $color-white;
+    }
+  }
+
+  &--color::before {
+    background-color: $color-black;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    transition: all .2s;
+  }
+
+  &--color::after {
+    background-color: $color-black;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 25px;
+    height: 2px;
+    transition: all .2s;
+  }
+
+  &.open::before {
+    background-color: $color-black;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    transform: rotate(50deg);
+  }
+
+  &.open:after {
+    background-color: $color-black;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-50deg);
+  }
+
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 1000;
+
+    & img {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__link {
+      color: $color-black;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      transition: all .4s ease;
+
+      &:visited, &:active {
+        color: $color-black;
+      }
+    }
+  }
+}
