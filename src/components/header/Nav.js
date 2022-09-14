@@ -13,11 +13,11 @@ const Nav = ({logo, logoDark, matches, bottom}) => {
         if(!matches) {
             const {height} = refMenu.current.getBoundingClientRect()
             const handleScroll = (event) => {
-                 setMatch(bottom - height <= 0)
+                setMatch(bottom - height <= 0)
             };
             window.addEventListener('scroll', handleScroll, true);
         }
-    }, [bottom, matches, match]);
+    });
 
     return (
         <>

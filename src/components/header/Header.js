@@ -26,7 +26,7 @@ const Header = ({content}) => {
             setBottom(bottom)
         };
         window.addEventListener('scroll', handleScroll, true);
-    }, [bottom]);
+    }, [matches, bottom]);
 
     return (
         <header className="header">

@@ -14,7 +14,7 @@ const Burger = ({menu, bottom, logo, logoDark}) => {
             setMatch(bottom - width <= 0)
         };
         window.addEventListener('scroll', handleScroll, true);
-    }, [bottom]);
+    });
 
     return (
         <>
